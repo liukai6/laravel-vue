@@ -21,6 +21,8 @@ Vue.component('example', require('./components/ExampleComponent.vue'));
 Vue.component('my-view', require('./components/view.vue'));
 Vue.component('mybutton', require('./components/mybutton.vue'));
 Vue.component('message', require('./components/message.vue'))
+Vue.component('mymain', require('./pages/mymain.vue'))
+Vue.component('mydata', require('./pages/mydata.vue'))
 
 import ElementUI from 'element-ui' //引入element－ui
 
