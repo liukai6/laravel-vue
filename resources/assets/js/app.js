@@ -9,6 +9,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -16,13 +18,26 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/ExampleComponent.vue'));
-
+Vue.component('my-view', require('./components/view.vue'));
+Vue.component('mybutton', require('./components/mybutton.vue'));
+Vue.component('message', require('./components/message.vue'))
 
 import ElementUI from 'element-ui' //引入element－ui
 
 import 'element-ui/lib/theme-chalk/index.css' //引入element－ui所需的css样式资源文件
 
 Vue.use(ElementUI) //把引入的ElementUI装入我们的Vue
-const app = new Vue({
-    el: '#app'
-});
+
+
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+import routes from './routes';    // 路由配置文件
+// 实例化路由
+const router = new VueRouter({
+    routes
+})
+
+var vm = new Vue({
+  router
+}).$mount('#app');

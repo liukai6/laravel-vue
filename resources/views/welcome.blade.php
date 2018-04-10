@@ -8,7 +8,11 @@
 <title>123</title>
 </head>
 <body>
-<div id="app"> <example></example>
+<div id="app"> <my-view></my-view>
+  <div class="container main">
+            <router-view >
+        </div>
+
 </div><script src="{{ mix('js/assets/app.js') }}"></script>
 </body>
 </html>
