@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="app"> <mymain></mymain>
-
+ <router-view >
 
 </div><script src="{{ mix('js/assets/app.js') }}"></script>
 </body>
