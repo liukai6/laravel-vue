@@ -9,6 +9,6 @@
 </head>
 <body>
 <div id="app"> <example></example>
-</div><script src="{{ mix('js/app.js') }}"></script>
+</div><script src="{{ mix('js/assets/app.js') }}"></script>
 </body>
 </html>

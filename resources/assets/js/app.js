@@ -20,7 +20,7 @@ Vue.component('example', require('./components/ExampleComponent.vue'));
 
 import ElementUI from 'element-ui' //引入element－ui
 
-import 'element-ui/lib/theme-default/index.css' //引入element－ui所需的css样式资源文件
+import 'element-ui/lib/theme-chalk/index.css' //引入element－ui所需的css样式资源文件
 
 Vue.use(ElementUI) //把引入的ElementUI装入我们的Vue
 const app = new Vue({
